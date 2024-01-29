@@ -20,8 +20,11 @@
           top: 90%;
         }
         .slider-banner-item {
-          height: 85vh;
+          height: 77vh;
+          margin-top: 87px;
           background-color: $red-container-color;
+          background: #de5d5d;
+          background-color: #de5d5d;
           background-image: url("../images/iPhone.png");
           background-repeat: no-repeat;
           background-size: cover;
@@ -35,35 +38,36 @@
           }
           h1 {
             font-family: "Montserrat", sans-serif;
-            font-size: 4em;
-            font-weight: 700;
+            font-size: 6em;
+            letter-spacing: -1.1px;
+            font-weight: 600;
+            white-space: nowrap;
           }
         }
 
         .slick-dots {
+          display: flex;
+          justify-content: center;
+          position: absolute;
           li {
-            margin: 0;
-            padding: 0;
-            button {
-              &:before {
-                width: 0.6rem;
-                height: 0.6rem;
-                border: 1px solid $white-text-color;
-                border-radius: 50%;
-              }
+            width: 0.6rem;
+            height: 0.6rem;
+            list-style: none;
+            &.slick-active button {
+              background: #fff;
             }
+          }
+          button {
+            padding: 3px;
+            font-size: 0;
+            width: 10px;
+            height: 10px;
+            background-color: transparent;
+            border-radius: 50%;
+            border: 1px solid white;
 
-            &.slick-active {
-              button {
-                &:before {
-                  background-color: $white-container-color;
-                }
-              }
-            }
-            button {
-              &::before {
-                content: "";
-              }
+            &::before {
+              content: "";
             }
           }
         }
@@ -75,9 +79,9 @@
       height: 695px;
       opacity: 0.98;
       .about__title {
-        // margin: 100px 0 0 410px;
-        // position: absolute;
-        // white-space: nowrap;
+        margin: 100px 0 0 410px;
+        position: absolute;
+        white-space: nowrap;
         height: 46px;
         color: #3a3a3a;
         font-family: "Montserrat";

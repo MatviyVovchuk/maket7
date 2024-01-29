@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Varela+Round&display=swap");
 @font-face {
   font-family: "Varela Round", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
   font-family: "Montserrat", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Varela+Round&display=swap");
 }
 * {
   font-family: "Varela Round", sans-serif;
@@ -19,7 +19,6 @@ header {
   position: absolute;
   color: #ffffff;
   z-index: 3;
-  height: 100px;
 }
 header .navbar {
   background-color: #de5d5d;
@@ -27,17 +26,22 @@ header .navbar {
 header .navbar .container a {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 600;
+}
+header .navbar .container .collapse {
+  margin-top: -25px;
 }
 header .navbar .container .collapse ul li a {
+  font-size: 18px;
   color: #ffffff;
   font-weight: normal;
-  border-top: 3px solid #de5d5d;
+  border-top: 6px solid #de5d5d;
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
 }
 header .navbar .container .collapse ul li a:hover {
-  border-top: 3px solid #ffffff;
+  border-top: 6px solid #ffffff;
+  padding-top: 30px;
 }
 
 .container-fluid {
@@ -51,7 +55,10 @@ header .navbar .container .collapse ul li a:hover {
   top: 90%;
 }
 .container-fluid main .main-banner .slider-banner-content .slider-banner-item {
-  height: 85vh;
+  height: 77vh;
+  margin-top: 87px;
+  background-color: #de5d5d;
+  background: #de5d5d;
   background-color: #de5d5d;
   background-image: url("../images/iPhone.png");
   background-repeat: no-repeat;
@@ -64,23 +71,34 @@ header .navbar .container .collapse ul li a:hover {
 }
 .container-fluid main .main-banner .slider-banner-content .slider-banner-item h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 4em;
-  font-weight: 700;
+  font-size: 6em;
+  letter-spacing: -1.1px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.container-fluid main .main-banner .slider-banner-content .slick-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
 }
 .container-fluid main .main-banner .slider-banner-content .slick-dots li {
-  margin: 0;
-  padding: 0;
-}
-.container-fluid main .main-banner .slider-banner-content .slick-dots li button:before {
   width: 0.6rem;
   height: 0.6rem;
-  border: 1px solid #ffffff;
+  list-style: none;
+}
+.container-fluid main .main-banner .slider-banner-content .slick-dots li.slick-active button {
+  background: #fff;
+}
+.container-fluid main .main-banner .slider-banner-content .slick-dots button {
+  padding: 3px;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
   border-radius: 50%;
+  border: 1px solid white;
 }
-.container-fluid main .main-banner .slider-banner-content .slick-dots li.slick-active button:before {
-  background-color: #ffffff;
-}
-.container-fluid main .main-banner .slider-banner-content .slick-dots li button::before {
+.container-fluid main .main-banner .slider-banner-content .slick-dots button::before {
   content: "";
 }
 .container-fluid main .about {
@@ -90,6 +108,9 @@ header .navbar .container .collapse ul li a:hover {
   opacity: 0.98;
 }
 .container-fluid main .about .about__title {
+  margin: 100px 0 0 410px;
+  position: absolute;
+  white-space: nowrap;
   height: 46px;
   color: #3a3a3a;
   font-family: "Montserrat";
