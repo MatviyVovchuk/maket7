@@ -1,0 +1,34 @@
+header {
+    position: absolute;
+    color: #ffffff;
+    z-index: 3;
+    height: 100px;
+  
+    .navbar {
+      background-color: $red-container-color;
+  
+      .container {
+        a {
+          color: $white-text-color;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+        }
+        .collapse {
+          ul {
+            li {
+              a {
+                color: $white-text-color;
+                font-weight: normal;
+                border-top: 3px solid $red-text-color;
+                font-family: "Varela Round", sans-serif;
+                font-weight: 400;
+              }
+              a:hover {
+                border-top: 3px solid $white-text-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

@@ -8,6 +8,9 @@
 }
 * {
   font-family: "Varela Round", sans-serif;
+}
+
+* {
   margin: 0;
   padding: 0;
 }
@@ -16,6 +19,7 @@ header {
   position: absolute;
   color: #ffffff;
   z-index: 3;
+  height: 100px;
 }
 header .navbar {
   background-color: #de5d5d;
@@ -78,4 +82,55 @@ header .navbar .container .collapse ul li a:hover {
 }
 .container-fluid main .main-banner .slider-banner-content .slick-dots li button::before {
   content: "";
+}
+.container-fluid main .about {
+  margin: 0 auto;
+  position: relative;
+  height: 695px;
+  opacity: 0.98;
+}
+.container-fluid main .about .about__title {
+  height: 46px;
+  color: #3a3a3a;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-weight: 600;
+  text-align: left;
+}
+.container-fluid main .about .about__categories {
+  display: flex;
+  margin: 220px 0 0 18px;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+}
+.container-fluid main .about .about__categories .category__item {
+  margin-right: 170px;
+}
+.container-fluid main .about .about__categories .category__item:last-child {
+  margin-left: 12px;
+}
+.container-fluid main .about .about__categories .category__item .item__img {
+  padding-left: 10px;
+}
+.container-fluid main .about .about__categories .category__item .item__text {
+  position: absolute;
+  width: 270px;
+  text-align: center;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 37px 0 0 -10px;
+  font-family: Montserrat;
+}
+.container-fluid main .about .about__categories .category__item .item__text span {
+  text-align: center;
+  width: 229px;
+  height: 90px;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-left: -10px;
 }

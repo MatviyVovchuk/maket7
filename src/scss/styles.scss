@@ -1,53 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
-@font-face {
-  font-family: "Varela Round", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-
-  font-family: "Montserrat", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-}
+@import "./variables/fonts";
+@import "./variables/colors";
 
 * {
-  font-family: "Varela Round", sans-serif;
   margin: 0;
   padding: 0;
 }
 
-header {
-  position: absolute;
-  color: #ffffff;
-  z-index: 3;
-
-  .navbar {
-    background-color: #de5d5d;
-
-    .container {
-      a {
-        color: #ffffff;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-      }
-      .collapse {
-        ul {
-          li {
-            a {
-              color: #ffffff;
-              font-weight: normal;
-              border-top: 3px solid #de5d5d;
-              font-family: "Varela Round", sans-serif;
-              font-weight: 400;
-            }
-            a:hover {
-              border-top: 3px solid #ffffff;
-            }
-          }
-        }
-      }
-    }
-  }
-}
+@import "./layouts/header";
 
 .container-fluid {
   padding: 0;
@@ -62,16 +21,16 @@ header {
         }
         .slider-banner-item {
           height: 85vh;
-          background-color: #de5d5d;
+          background-color: $red-container-color;
           background-image: url("../images/iPhone.png");
           background-repeat: no-repeat;
           background-size: cover;
           background-position: 60% 100px;
-          color: #ffffff;
+          color: $white-text-color;
 
           .banner-button-block {
             button {
-              border: 2px solid #ffffff;
+              border: 2px solid $white-text-color;
             }
           }
           h1 {
@@ -89,7 +48,7 @@ header {
               &:before {
                 width: 0.6rem;
                 height: 0.6rem;
-                border: 1px solid #ffffff;
+                border: 1px solid $white-text-color;
                 border-radius: 50%;
               }
             }
@@ -97,7 +56,7 @@ header {
             &.slick-active {
               button {
                 &:before {
-                  background-color: #ffffff;
+                  background-color: $white-container-color;
                 }
               }
             }
@@ -105,6 +64,61 @@ header {
               &::before {
                 content: "";
               }
+            }
+          }
+        }
+      }
+    }
+    .about {
+      margin: 0 auto;
+      position: relative;
+      height: 695px;
+      opacity: 0.98;
+      .about__title {
+        // margin: 100px 0 0 410px;
+        // position: absolute;
+        // white-space: nowrap;
+        height: 46px;
+        color: #3a3a3a;
+        font-family: "Montserrat";
+        font-size: 48px;
+        font-weight: 600;
+        text-align: left;
+      }
+      .about__categories {
+        display: flex;
+        margin: 220px 0 0 18px;
+        justify-items: center;
+        align-items: center;
+        position: absolute;
+        .category__item {
+          margin-right: 170px;
+          &:last-child {
+            margin-left: 12px;
+          }
+          .item__img {
+            padding-left: 10px;
+          }
+          .item__text {
+            position: absolute;
+            width: 270px;
+            text-align: center;
+            color: #666666;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            margin: 37px 0 0 -10px;
+            font-family: Montserrat;
+
+            span {
+              text-align: center;
+              width: 229px;
+              height: 90px;
+              color: #666666;
+              font-size: 16px;
+              font-weight: 600;
+              line-height: 24px;
+              margin-left: -10px;
             }
           }
         }
