@@ -6,21 +6,59 @@
     font-size: 48px;
     font-weight: 600;
   }
-  .about-category-text {
-    text-align: center;
-    color: $gray-text-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    font-family: "Montserrat", sans-serif;
-
-    .about-category-title {
+  .about-category-item {
+    .about-category-text {
       text-align: center;
       color: $gray-text-color;
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 14px;
+      font-weight: 400;
       line-height: 24px;
+      font-family: "Montserrat", sans-serif;
+
+      .about-category-title {
+        text-align: center;
+        color: $gray-text-color;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+      }
     }
   }
 }
 
+@media screen and (max-width: 995px) {
+  #about {
+    .container {
+      .about-category-item {
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #about {
+    .container {
+      h1 {
+        font-size: 2.5em;
+      }
+      .about-category-item {
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #about {
+    .container {
+      h1 {
+        font-size: 2em;
+      }
+    }
+  }
+}
