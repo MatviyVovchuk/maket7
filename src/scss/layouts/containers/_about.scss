@@ -1,0 +1,25 @@
+#about {
+  .about-title {
+    white-space: nowrap;
+    color: #3a3a3a;
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+  }
+  .about-category-text {
+    text-align: center;
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "Montserrat", sans-serif;
+
+    .about-category-title {
+      text-align: center;
+      color: $gray-text-color;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+    }
+  }
+}

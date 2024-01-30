@@ -1,0 +1,112 @@
+.main-banner {
+  position: relative;
+  padding: 0;
+
+  .slider-banner-content {
+    margin-bottom: 0;
+    .slick-dots {
+      top: 90%;
+    }
+    .slider-banner-item {
+      height: 80vh;
+      margin-top: 90px;
+      background-color: $red-container-color;
+      background: #de5d5d;
+      background-color: #de5d5d;
+      background-image: url("../images/iPhone.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+        background-position: 60% 0px;
+      color: $white-text-color;
+
+      .banner-button-block {
+        button {
+          border: 2px solid $white-text-color;
+        }
+      }
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 6em;
+        letter-spacing: -1.1px;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+    }
+
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      height: fit-content;
+      li {
+        width: 0.6rem;
+        height: 0.6rem;
+        list-style: none;
+        &.slick-active button {
+          background: #fff;
+        }
+      }
+      button {
+        padding: 3px;
+        font-size: 0;
+        width: 10px;
+        height: 10px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 1px solid white;
+
+        &::before {
+          content: "";
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main-banner {
+    .slider-banner-content {
+      .slider-banner-item {
+        h1 {
+          font-size: 5em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-banner {
+    .slider-banner-content {
+      .slider-banner-item {
+        h1 {
+          font-size: 4em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+    .main-banner {
+      .slider-banner-content {
+        .slider-banner-item {
+          h1 {
+            font-size: 3em;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .main-banner {
+      .slider-banner-content {
+        .slider-banner-item {
+          h1 {
+            font-size: 2em;
+          }
+        }
+      }
+    }
+  }
