@@ -1,0 +1,57 @@
+.share-container {
+  background-color: $dark-gray-container-color;
+  color: $white-text-color;
+  .share-img-block {
+    .share-img {
+    }
+  }
+  .share-information-block {
+
+    h1 {
+      white-space: nowrap;
+      font-family: "Montserrat", sans-serif;
+      font-size: 48px;
+      font-weight: 600;
+    }
+    .share-slider {
+      .share-slider-item {
+        // width: 200px;
+        a {
+          text-decoration: none;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .slick-dots {
+        display: flex;
+        justify-content: start;
+        position: absolute;
+        height: fit-content;
+
+        li {
+          width: 0.6rem;
+          height: 0.6rem;
+          list-style: none;
+          &.slick-active button {
+            background: #fff;
+          }
+        }
+        button {
+          padding: 3px;
+          font-size: 0;
+          width: 10px;
+          height: 10px;
+          background-color: transparent;
+          border-radius: 50%;
+          border: 1px solid white;
+  
+          &::before {
+            content: "";
+          }
+        }
+      }
+    }
+  }
+}

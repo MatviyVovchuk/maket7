@@ -173,3 +173,46 @@ header .navbar.shadow {
     font-size: 2em;
   }
 }
+.container-fluid main .share-container {
+  background-color: #262626;
+  color: #ffffff;
+}
+.container-fluid main .share-container .share-information-block h1 {
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+.container-fluid main .share-container .share-information-block .share-slider .share-slider-item a {
+  text-decoration: none;
+}
+.container-fluid main .share-container .share-information-block .share-slider .share-slider-item a img {
+  width: 100%;
+}
+.container-fluid main .share-container .share-information-block .share-slider .slick-dots {
+  display: flex;
+  justify-content: start;
+  position: absolute;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.container-fluid main .share-container .share-information-block .share-slider .slick-dots li {
+  width: 0.6rem;
+  height: 0.6rem;
+  list-style: none;
+}
+.container-fluid main .share-container .share-information-block .share-slider .slick-dots li.slick-active button {
+  background: #fff;
+}
+.container-fluid main .share-container .share-information-block .share-slider .slick-dots button {
+  padding: 3px;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.container-fluid main .share-container .share-information-block .share-slider .slick-dots button::before {
+  content: "";
+}

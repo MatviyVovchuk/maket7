@@ -1,6 +1,6 @@
 // BANNER SLIDER
 
-$(".slider-banner-content").slick({
+$(".slider-banner-content, .share-slider").slick({
   arrows: false,
   dots: true,
   infinity: true,

@@ -26,85 +26,50 @@
   <body>
     <div class="container-fluid">
       <header class="container-fluid d-flex justify-content-center">
-    <nav
-      class="navbar w-100 fixed-top d-flex justify-content-center navbar-expand-lg"
-    >
-      <div
-        class="container mx-2 mx-sm-0 d-flex justify-content-around justify-content-lg-between"
-      >
-        <div class="navbar-brand col-xl-4 fs-1">
-          <a class="" href="#hello">
-            <img src="images/logo.png" alt="logo" />
-          </a>
-        </div>
-        <div
-          class="collapse navbar-collapse col-xl-8 d-lg-flex justify-content-between"
-          id="main_menu_navbar"
-        >
-          <ul
-            class="navbar-nav me-auto mb-2 w-100 h-100 mb-lg-0 d-lg-flex justify-content-lg-around"
-          >
-            <li class="nav-item">
-              <a
-                class="nav-link active pt-4"
-                aria-current="page"
-                href="#hello"
-                >Hello</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active pt-4"
-                aria-current="page"
-                href="#about"
-                >Owerview</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active pt-4"
-                aria-current="page"
-                href="#share"
-                >Share</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active pt-4"
-                aria-current="page"
-                href="#features"
-                >Features</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active pt-4"
-                aria-current="page"
-                href="#gallery"
-                >Gallery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active pt-4"
-                aria-current="page"
-                href="#download"
-                >Download</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link active pt-4"
-                aria-current="page"
-                href="#compatibility"
-                >Compatibility</a
-              >
-            </li>
-          </ul>
-        </div>
+  <nav class="navbar w-100 fixed-top d-flex justify-content-center navbar-expand-lg">
+    <div class="container mx-2 mx-sm-0 d-flex justify-content-around justify-content-lg-between">
+      <div class="navbar-brand col-xl-4 fs-1">
+        <a class="" href="#hello">
+          <img src="images/logo.png" alt="logo" />
+        </a>
       </div>
-    </nav>
-  </header>
+      <div class="collapse navbar-collapse col-xl-8 d-lg-flex justify-content-between"
+        id="main_menu_navbar">
+        <ul class="navbar-nav me-auto mb-2 w-100 h-100 mb-lg-0 d-lg-flex justify-content-lg-around">
+          <li class="nav-item">
+            <a class="nav-link active pt-4" aria-current="page" href="#hello">
+              Hello</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active pt-4" aria-current="page" href="#about">
+              Owerview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active pt-4" aria-current="page" href="#share">
+              Share</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active pt-4" aria-current="page" href="#features">
+              Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active pt-4" aria-current="page" href="#gallery">
+              Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active pt-4" aria-current="page" href="#download">
+              Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active pt-4" aria-current="page" href="#compatibility">
+              Compatibility</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
 
       <main>
         <div id="hello" class="container-fluid main-banner">
@@ -270,7 +235,7 @@
         <div
           class="about-category-item col-md-8 col-lg-4 d-flex flex-column flex-sm-row flex-lg-column align-items-center justify-content-around pb-md-4"
         >
-          <img class="pb-5" src="./images/icons/Touch_ID.png" alt="focus" />
+          <img class="pb-5" src="./images/icons/Touch_ID.png" alt="touch id" />
           <span
             class="about-category-text d-block fs-xl-6 px-5 pb-3 text-center"
           >
@@ -282,7 +247,7 @@
         <div
           class="about-category-item col-md-8 col-lg-4 d-flex flex-column flex-sm-row flex-lg-column align-items-center justify-content-around pb-md-4"
         >
-          <img class="pb-5" src="./images/icons/Filters.png" alt="focus" />
+          <img class="pb-5" src="./images/icons/Filters.png" alt="filters" />
           <span
             class="about-category-text d-block fs-xl-6 px-5 pb-3 text-center"
           >
@@ -297,8 +262,38 @@
 </div>
 
 
-        <div id="share">
-    <h1>Share</h1>
+        <div id="share" class="share-container container-fluid d-flex justify-content-center">
+  <div class="row w-100 d-flex justify-content-center">
+    <div class="container d-flex flex-column flex-sm-row align-items-center">
+      <div class="share-img-block d-flex flex-column align-items-center align-items-md-start col-6 pt-3  mt-md-4">
+        <img class="share-img col-11 mt-md-5" src="./images/iPhone_vertical.png" alt="iphone">
+      </div>
+      <div class="share-information-block d-flex align-self-center flex-column align-items-center align-items-md-start justify-content-md-center text-center text-sm-start col-6 ">
+        <h1>Share instantly</h1>
+        <div class="col-9"> 
+          <!-- share-slider -->
+          <div class="d-flex flex-column align-items-start pb-2">
+            <!-- share-slider-item -->
+            <p class="mb-5">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper 
+              facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+              <div class="share-slider">
+
+
+                <div class="share-slider-item span d-flex flex-column flex-md-row justify-content-between align-items-center">
+                  <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                    <img class="col-6 col-md-4 py-3 py-md-0" src="./images/Video.png" alt="video">
+                  </a>
+                  <p class="col-12 col-md-7">Mauris euismod ultrices nisl sit amet luctus. Donec volutpat arcu ullamcorper 
+                  facilisis vulputate. Sed auctor pulvinar ornare. Donec gravida.</p>
+                </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
       </main>
       
