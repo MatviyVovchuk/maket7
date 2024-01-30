@@ -177,6 +177,9 @@ header .navbar.shadow {
   background-color: #262626;
   color: #ffffff;
 }
+.container-fluid main .share-container .share-img-block .share-img {
+  width: 100%;
+}
 .container-fluid main .share-container .share-information-block h1 {
   white-space: nowrap;
   font-family: "Montserrat", sans-serif;
