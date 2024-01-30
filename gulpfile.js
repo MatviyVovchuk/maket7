@@ -6,6 +6,7 @@ const cleanCSS = require("gulp-clean-css");
 const rename = require("gulp-rename");
 const uglify = require("gulp-uglify");
 const concat = require("gulp-concat");
+const fileInclude = require("gulp-file-include"); // Include gulp-file-include module
 const browserSync = require("browser-sync").create();
 
 // Compile SCSS to CSS
@@ -43,10 +44,14 @@ gulp.task("images", () => {
     .pipe(browserSync.stream());
 });
 
-// Copy HTML files to dist folder
+// Include HTML partials and copy to dist folder
 gulp.task("html", () => {
   return gulp
     .src("src/*.html")
+    .pipe(fileInclude({ // Use gulp-file-include here
+      prefix: "@@",
+      basepath: "@file",
+    }))
     .pipe(gulp.dest("dist"))
     .pipe(browserSync.stream());
 });
@@ -62,7 +67,7 @@ gulp.task("watch", () => {
   gulp.watch("src/scss/**/*.scss", gulp.series("styles"));
   gulp.watch("src/js/*.js", gulp.series("scripts"));
   gulp.watch("src/images/**/*", gulp.series("images"));
-  gulp.watch("src/*.html", gulp.series("html"));
+  gulp.watch("src/**/*.html", gulp.series("html")); // Watch HTML files in all directories
   gulp
     .watch(["*.html", "dist/css/*.css", "dist/js/*.js"])
     .on("change", browserSync.reload);
