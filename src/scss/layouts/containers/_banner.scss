@@ -16,7 +16,7 @@
       background-image: url("../images/iPhone.png");
       background-repeat: no-repeat;
       background-size: cover;
-        background-position: 60% 0px;
+      background-position: 60% 0px;
       color: $white-text-color;
 
       .banner-button-block {
@@ -88,25 +88,25 @@
 }
 
 @media screen and (max-width: 650px) {
-    .main-banner {
-      .slider-banner-content {
-        .slider-banner-item {
-          h1 {
-            font-size: 3em;
-          }
+  .main-banner {
+    .slider-banner-content {
+      .slider-banner-item {
+        h1 {
+          font-size: 3em;
         }
       }
     }
   }
+}
 
-  @media screen and (max-width: 500px) {
-    .main-banner {
-      .slider-banner-content {
-        .slider-banner-item {
-          h1 {
-            font-size: 2em;
-          }
+@media screen and (max-width: 500px) {
+  .main-banner {
+    .slider-banner-content {
+      .slider-banner-item {
+        h1 {
+          font-size: 2em;
         }
       }
     }
   }
+}
