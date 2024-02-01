@@ -1,6 +1,6 @@
 // BANNER SLIDER
 
-$(".slider-banner-content, .share-slider").slick({
+$(".slider-banner-content, .share-slider, .features-slider").slick({
   arrows: false,
   dots: true,
   infinity: true,
@@ -10,24 +10,24 @@ $(".slider-banner-content, .share-slider").slick({
 
 // ADD SHADOW TO NAV ON
 
-$(document).ready(function() {
+$(document).ready(function () {
   // Check scroll position on page load
   checkScroll();
 
   // Check scroll position on scroll
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     checkScroll();
   });
 
   function checkScroll() {
-    var navbar = $('.navbar');
+    var navbar = $(".navbar");
     var isTop = navbar.offset().top === 0;
 
     // Add or remove shadow class based on scroll position
     if (!isTop) {
-      navbar.addClass('shadow');
+      navbar.addClass("shadow");
     } else {
-      navbar.removeClass('shadow');
+      navbar.removeClass("shadow");
     }
   }
 });
