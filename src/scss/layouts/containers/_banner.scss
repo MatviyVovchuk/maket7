@@ -3,6 +3,7 @@
   padding: 0;
 
   .slider-banner-content {
+    background-color: $red-container-color;
     margin-bottom: 0;
     .slick-dots {
       top: 90%;
@@ -16,8 +17,9 @@
       background-image: url("../images/iPhone.png");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: 60% 0px;
+      background-position: 60% 0%;
       color: $white-text-color;
+      max-height: 700px;
 
       .banner-button-block {
         button {

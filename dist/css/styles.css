@@ -59,6 +59,7 @@ header .navbar.shadow {
   padding: 0;
 }
 .container-fluid main .main-banner .slider-banner-content {
+  background-color: #de5d5d;
   margin-bottom: 0;
 }
 .container-fluid main .main-banner .slider-banner-content .slick-dots {
@@ -73,8 +74,9 @@ header .navbar.shadow {
   background-image: url("../images/iPhone.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 60% 0px;
+  background-position: 60% 0%;
   color: #ffffff;
+  max-height: 700px;
 }
 .container-fluid main .main-banner .slider-banner-content .slider-banner-item .banner-button-block button {
   border: 2px solid #ffffff;
@@ -464,4 +466,57 @@ header .navbar.shadow {
   .container-fluid main .features-container .features-block .features-information-block .features-slider-container .features-slider .features-slider-item p {
     text-align: center;
   }
+}
+.container-fluid main .gallery-container .gallery-block {
+  max-width: 1272px;
+}
+.container-fluid main .gallery-container .gallery-block .gallery-block-text h1 {
+  color: #de5d5d;
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.container-fluid main .gallery-container .gallery-block .gallery-block-text p {
+  color: #666666;
+}
+.container-fluid main .gallery-container .gallery-block-images .gallery-images-content .gallery-images-content-item {
+  max-height: 500px;
+  position: relative;
+  background-color: #151515;
+}
+.container-fluid main .gallery-container .gallery-block-images .gallery-images-content .gallery-images-content-item img {
+  position: inherit;
+  height: 100%;
+  width: 100%;
+  max-height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+.container-fluid main .gallery-container .gallery-block-images .gallery-images-content .gallery-images-content-item:hover img {
+  transform: translateY(-60px);
+}
+.container-fluid main .gallery-container .gallery-block-images .gallery-images-content .gallery-images-content-item .image-label {
+  position: relative;
+  top: -50px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #151515;
+}
+.container-fluid main .gallery-container .gallery-block-images .gallery-images-content .gallery-images-content-item .image-label p {
+  color: #ffffff;
+  margin: 0;
+}
+.container-fluid main .gallery-container .gallery-block-images .gallery-images-content .gallery-images-content-item .image-label .likes {
+  margin-top: 4px;
+}
+.container-fluid main .gallery-container .gallery-block-images .gallery-images-content .gallery-images-content-item .image-label .likes p, .container-fluid main .gallery-container .gallery-block-images .gallery-images-content .gallery-images-content-item .image-label .likes i {
+  color: #de5d5d;
+}
+.container-fluid main .gallery-container .gallery-block-images .gallery-images-content .gallery-images-content-item .image-label .likes i {
+  cursor: pointer;
 }
