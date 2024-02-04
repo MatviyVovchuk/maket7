@@ -12,7 +12,7 @@
   padding: 0;
   main {
     @import "./layouts/containers/banner";
-    
+
     @import "./layouts/containers/about";
 
     @import "./layouts/containers/share_instantly";
@@ -20,5 +20,7 @@
     @import "./layouts/containers/features";
 
     @import "./layouts/containers/gallery";
+
+    @import "./layouts/containers/download";
   }
 }

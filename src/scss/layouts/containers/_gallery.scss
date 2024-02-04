@@ -193,9 +193,9 @@
           width: 100%;
           // box-sizing: border-box;
 
-          &:not(:last-child) {
-            // margin-bottom: 20px;
-          }
+          // &:not(:last-child) {
+          //   margin-bottom: 20px;
+          // }
 
           &:nth-child(-n + 2) {
             width: calc(50%);

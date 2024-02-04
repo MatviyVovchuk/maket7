@@ -634,3 +634,6 @@ header .navbar.shadow {
     width: 100%;
   }
 }
+.container-fluid main .download-container {
+  background-color: #de5d5d;
+}
