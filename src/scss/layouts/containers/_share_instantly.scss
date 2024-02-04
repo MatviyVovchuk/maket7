@@ -117,10 +117,10 @@
       .share-information-block {
         padding-right: 30px;
         h1 {
-          align-self: center !important;
+          // align-self: center !important;
         }
         p {
-          text-align: center;
+          // text-align: center;
         }
         .share-information-content {
           .share-slider {
@@ -129,6 +129,9 @@
             }
           }
           .share-slider-item {
+            p {
+              text-align: center;
+            }
             img {
               margin: 0 !important;
             }
@@ -176,6 +179,12 @@
       }
       .share-information-block {
         padding-right: 0px;
+        h1 {
+          align-self: center !important;
+        }
+        p {
+          text-align: center;
+        }
         .share-information-content {
           width: 150%;
           .share-slider {
