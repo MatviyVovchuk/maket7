@@ -1,3 +1,115 @@
 .download-container {
   background-color: $red-container-color;
+  .download-block {
+    max-width: 1272px;
+
+    .download-block-content {
+      .app-image {
+        img {
+          // width: 60%;
+        }
+      }
+      .download-citate-block {
+        p {
+          color: $white-text-color;
+          font-family: "Montserrat", sans-serif;
+          font-size: 3em;
+          font-weight: 600;
+          line-height: 1.4;
+
+          &:last-of-type {
+            font-family: "Varela Round", sans-serif;
+            font-size: 1.3em;
+            font-weight: 500;
+          }
+        }
+        .download-buttons {
+          button {
+            border: 2px solid $white-text-color;
+            a {
+              text-decoration: none;
+              color: $white-text-color;
+              transition: color 0.3s ease;
+            }
+          }
+          button:hover {
+            a {
+              color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .download-container {
+    .download-block {
+  
+      .download-block-content {
+        .app-image {
+          justify-content: center;
+          img {
+            width: 60%;
+          }
+        }
+        .download-citate-block {
+          p {
+            font-size: 2.5em;
+            line-height: 1.4;
+  
+            &:last-of-type {
+              font-size: 1.2em;
+            }
+          }
+          .download-buttons {
+            button {
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .download-container {
+    .download-block {
+      .download-block-content {
+        .download-citate-block {
+          p {
+            font-size: 2em;
+            line-height: 1.4;
+  
+            &:last-of-type {
+              font-size: 1.1em;
+            }
+          }
+          .download-buttons {
+            button {
+              width: 120px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .download-container {
+    .download-block {
+      .download-block-content {
+        .download-citate-block {
+          .download-buttons {
+            button {
+              width: 90px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

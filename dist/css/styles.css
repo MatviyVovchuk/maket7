@@ -81,6 +81,14 @@ header .navbar.shadow {
 .container-fluid main .main-banner .slider-banner-content .slider-banner-item .banner-button-block button {
   border: 2px solid #ffffff;
 }
+.container-fluid main .main-banner .slider-banner-content .slider-banner-item .banner-button-block button a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.container-fluid main .main-banner .slider-banner-content .slider-banner-item .banner-button-block button:hover a {
+  color: black;
+}
 .container-fluid main .main-banner .slider-banner-content .slider-banner-item h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 6em;
@@ -636,4 +644,65 @@ header .navbar.shadow {
 }
 .container-fluid main .download-container {
   background-color: #de5d5d;
+}
+.container-fluid main .download-container .download-block {
+  max-width: 1272px;
+}
+.container-fluid main .download-container .download-block .download-block-content .download-citate-block p {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.container-fluid main .download-container .download-block .download-block-content .download-citate-block p:last-of-type {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+.container-fluid main .download-container .download-block .download-block-content .download-citate-block .download-buttons button {
+  border: 2px solid #ffffff;
+}
+.container-fluid main .download-container .download-block .download-block-content .download-citate-block .download-buttons button a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+.container-fluid main .download-container .download-block .download-block-content .download-citate-block .download-buttons button:hover a {
+  color: black;
+}
+@media screen and (max-width: 800px) {
+  .container-fluid main .download-container .download-block .download-block-content .app-image {
+    justify-content: center;
+  }
+  .container-fluid main .download-container .download-block .download-block-content .app-image img {
+    width: 60%;
+  }
+  .container-fluid main .download-container .download-block .download-block-content .download-citate-block p {
+    font-size: 2.5em;
+    line-height: 1.4;
+  }
+  .container-fluid main .download-container .download-block .download-block-content .download-citate-block p:last-of-type {
+    font-size: 1.2em;
+  }
+  .container-fluid main .download-container .download-block .download-block-content .download-citate-block .download-buttons button {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container-fluid main .download-container .download-block .download-block-content .download-citate-block p {
+    font-size: 2em;
+    line-height: 1.4;
+  }
+  .container-fluid main .download-container .download-block .download-block-content .download-citate-block p:last-of-type {
+    font-size: 1.1em;
+  }
+  .container-fluid main .download-container .download-block .download-block-content .download-citate-block .download-buttons button {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container-fluid main .download-container .download-block .download-block-content .download-citate-block .download-buttons button {
+    width: 90px;
+  }
 }

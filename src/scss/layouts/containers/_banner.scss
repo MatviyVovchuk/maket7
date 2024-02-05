@@ -24,6 +24,16 @@
       .banner-button-block {
         button {
           border: 2px solid $white-text-color;
+          a {
+            text-decoration: none;
+            color: $white-text-color;
+            transition: color 0.3s ease;
+          }
+        }
+        button:hover {
+          a {
+            color: black;
+          }
         }
       }
       h1 {
