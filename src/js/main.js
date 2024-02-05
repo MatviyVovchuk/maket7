@@ -20,8 +20,8 @@ $(document).ready(function () {
   });
 
   function checkScroll() {
-    var navbar = $(".navbar");
-    var isTop = navbar.offset().top === 0;
+    let navbar = $(".navbar");
+    let isTop = navbar.offset().top === 0;
 
     // Add or remove shadow class based on scroll position
     if (!isTop) {
@@ -30,4 +30,21 @@ $(document).ready(function () {
       navbar.removeClass("shadow");
     }
   }
+});
+
+// GALLARY SET LIKE
+
+$(document).ready(function () {
+  $(".heart-icon").on("click", function () {
+    let container = $(this).closest(".gallery-images-content-item");
+    let likeCount = parseInt(container.find(".likes .number").text(), 10);
+    let isLiked = $(this).hasClass("fa-solid");
+
+    if (isLiked) {
+      container.find(".likes .number").text(likeCount - 1);
+    } else {
+      container.find(".likes .number").text(likeCount + 1);
+    }
+    $(this).toggleClass("fa-regular fa-solid");
+  });
 });
