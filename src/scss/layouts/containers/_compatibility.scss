@@ -1,0 +1,29 @@
+.compatibility-container {
+  .compatibility-block {
+    max-width: 1272px;
+    .compatibility-content {
+      .compatibility-content-text {
+        .compatibility-content-ios {
+        }
+        .compatibility-content-android {
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .compatibility-container {
+    .compatibility-block {
+      width: 70%;
+      .compatibility-content {
+        .compatibility-content-text {
+          .compatibility-content-ios {
+          }
+          .compatibility-content-android {
+          }
+        }
+      }
+    }
+  }
+}

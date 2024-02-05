@@ -69,10 +69,8 @@ header .navbar.shadow {
   height: 80vh;
   margin-top: 90px;
   background-color: #de5d5d;
-  background: #de5d5d;
-  background-color: #de5d5d;
   background-image: url("../images/iPhone.png");
-  background-repeat: no-repeat;
+  background-image: no-repeat;
   background-size: cover;
   background-position: 60% 0%;
   color: #ffffff;
@@ -648,6 +646,11 @@ header .navbar.shadow {
 .container-fluid main .download-container .download-block {
   max-width: 1272px;
 }
+.container-fluid main .download-container .download-block .download-block-content .app-image img {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 23%;
+  transition: transform 0.3s ease;
+}
 .container-fluid main .download-container .download-block .download-block-content .download-citate-block p {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -704,5 +707,13 @@ header .navbar.shadow {
 @media screen and (max-width: 650px) {
   .container-fluid main .download-container .download-block .download-block-content .download-citate-block .download-buttons button {
     width: 90px;
+  }
+}
+.container-fluid main .compatibility-container .compatibility-block {
+  max-width: 1272px;
+}
+@media screen and (max-width: 991px) {
+  .container-fluid main .compatibility-container .compatibility-block {
+    width: 70%;
   }
 }

@@ -6,7 +6,9 @@
     .download-block-content {
       .app-image {
         img {
-          // width: 60%;
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+          border-radius: 23%;
+          transition: transform 0.3s ease;
         }
       }
       .download-citate-block {
