@@ -1,11 +1,19 @@
 .compatibility-container {
+  background-color: $light-gray-container-color;
   .compatibility-block {
     max-width: 1272px;
     .compatibility-content {
+      color: $gray-text-color;
+
+      h4 {
+        font-family: "Montserrat", sans-serif;
+      }
       .compatibility-content-text {
         .compatibility-content-ios {
+          margin-right: 10px;
         }
         .compatibility-content-android {
+            margin-left: 10px;
         }
       }
     }
@@ -19,8 +27,57 @@
       .compatibility-content {
         .compatibility-content-text {
           .compatibility-content-ios {
+            margin-right: 0px;
           }
           .compatibility-content-android {
+              margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .compatibility-container {
+    .compatibility-block {
+      .compatibility-content {
+        .compatibility-content-text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .compatibility-container {
+    .compatibility-block {
+      width: 100%;
+      .compatibility-content {
+        .compatibility-content-text {
+          
+          .compatibility-content-ios,
+          .compatibility-content-android {
+            display: flex;
+            flex-direction: column;
+            img {
+              align-self: center;
+            }
+            h5 {
+              font-size: 18px;
+            }
+          }
+
+          .compatibility-content-ios {
+            img {
+              width: 50%;
+            }
+          }
+          .compatibility-content-android {
+            img {
+              width: 110%;
+            }
           }
         }
       }

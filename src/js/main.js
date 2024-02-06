@@ -48,3 +48,97 @@ $(document).ready(function () {
     $(this).toggleClass("fa-regular fa-solid");
   });
 });
+
+// REGISTRATION FORM VALIDATION
+
+$(document).ready(function () {
+
+  const placeholderValues = savePlaceholderValues();
+
+  // Form submit
+  $("#subscribe_form").on("submit", function (event) {
+    clearValidationStyles();
+
+    // Check all field together
+    let isFormValid = true;
+
+    if (!validateEmail()) {
+      isFormValid = false;
+    }
+
+    if (!isFormValid) {
+      toastr.error("Форма не надіслена! Не коректні дані!");
+      event.preventDefault();
+      return;
+    }
+
+    toastr.success("Форма успішно надіслена!");
+    clearForm();
+
+    // Uncomment the line below to submit the form or remove event.preventDefault();
+    // $(this).unbind('submit').submit();
+    event.preventDefault();
+  });
+
+  // Function to save placeholder values in an array
+  function savePlaceholderValues() {
+    let placeholderValues = [];
+
+    $("#subscribe_form input[type=text], #subscribe_form input[type=email]"
+    ).each(function () {
+      placeholderValues.push($(this).attr("placeholder"));
+    });
+
+    return placeholderValues;
+  }
+
+  // Function to set placeholder values based on the provided array
+  function setPlaceholderValues(placeholderValues) {
+    $(
+      "#subscribe_form input[type=text], #subscribe_form input[type=email]"
+    ).each(function (index) {
+      $(this).attr("placeholder", placeholderValues[index]);
+    });
+  }
+
+  function clearForm() {
+    $("#subscribe_form")[0].reset();
+    setPlaceholderValues(placeholderValues);
+  }
+
+  function validateEmail() {
+    const emailField = $("#field_email");
+    const emailValue = emailField.val().trim();
+
+    if (emailField === "") {
+      setValidationError(phoneField, "Введіть адресу електронної пошти.");
+      toastr.error("Введіть адресу електронної пошти!");
+      return false;
+    }
+
+    if (!isValidEmail(emailValue)) {
+      setValidationError(
+        emailField,
+        "Введіть правильну адресу електронної пошти."
+      );
+      toastr.error("Введіть правильну адресу електронної пошти!");
+      return false;
+    }
+
+    return true;
+  }
+
+  function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  }
+
+  function setValidationError(element, message) {
+    element.attr("placeholder", message).val(""); // Clear the value
+    element.addClass("error");
+  }
+
+  function clearValidationStyles() {
+    $("input, textarea").removeClass("error").attr("placeholder", "");
+  }
+});

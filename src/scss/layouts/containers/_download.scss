@@ -6,7 +6,7 @@
     .download-block-content {
       .app-image {
         img {
-          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 10px 10px 10px $shadow-2;
           border-radius: 23%;
           transition: transform 0.3s ease;
         }
@@ -37,6 +37,22 @@
           button:hover {
             a {
               color: black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .download-container {
+    .download-block {
+      .download-block-content {
+        .download-citate-block {
+          .download-buttons {
+            button {
+              width: 150px;
             }
           }
         }
