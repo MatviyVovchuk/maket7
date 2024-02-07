@@ -22,27 +22,46 @@ header {
 }
 header .navbar {
   background-color: #de5d5d;
-  height: 91px;
+}
+header .navbar .container {
+  font-size: 18px;
 }
 header .navbar .container a.navbar-brand {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
 }
-header .navbar .container .collapse {
-  margin-top: -26px;
-}
-header .navbar .container .collapse ul.navbar-nav li.nav-item a.nav-link {
+header .navbar .container ul.navbar-nav li.nav-item a.nav-link {
   font-size: 18px;
   color: #ffffff;
-  font-weight: normal;
   border-top: 6px solid #de5d5d;
   font-family: "Varela Round", sans-serif;
   font-weight: 400;
+  transition: all 0.3s;
+}
+header .navbar .container div.show {
+  margin-top: 0px;
+}
+header .navbar .container div.show ul.navbar-nav li.nav-item a.nav-link:hover {
+  border-top: 6px solid #ffffff;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-left: 20px;
+  font-weight: 1000;
+}
+header .navbar .container .collapse {
+  margin-top: -21px;
 }
 header .navbar .container .collapse ul.navbar-nav li.nav-item a.nav-link:hover {
   border-top: 6px solid #ffffff;
-  padding-top: 30px;
+  background-color: transparent;
+  padding-left: 8px;
+  font-weight: 400;
+}
+header .navbar .container button .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+header .navbar .container button.navbar-toggler {
+  border: 2px solid #ffffff;
 }
 header .navbar {
   transition: box-shadow 0.3s ease-out;
@@ -813,7 +832,7 @@ header .navbar.shadow {
   color: black;
   background-color: #ffffff;
   border-color: black;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 @media (max-width: 1200px) {
   .container-fluid .footer-container .container .footer-block .footer-block-content-form .footer-block-form form {

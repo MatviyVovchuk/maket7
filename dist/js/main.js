@@ -8,7 +8,25 @@ $(".slider-banner-content, .share-slider, .features-slider").slick({
   slidesToScroll: 1,
 });
 
-// ADD SHADOW TO NAV ON
+// DYNAMICALLY UPDATE PROPERTY scroll-padding-top FOR TAKE INTO ACCOUNT HEADER HEIGHT
+
+$(document).ready(function() {
+  function updateScrollPadding() {
+    var headerHeight = $('.navbar').outerHeight(); // Adjust the selector to match your header element
+    headerHeight--;
+    $('html').css('scroll-padding-top', headerHeight + 'px');
+  }
+
+  // Initial update
+  updateScrollPadding();
+
+  // Update on window resize
+  $(window).resize(function() {
+    updateScrollPadding();
+  });
+});
+
+// ADD SHADOW TO NAV ON SCROLL
 
 $(document).ready(function () {
   // Check scroll position on page load
@@ -26,10 +44,28 @@ $(document).ready(function () {
     // Add or remove shadow class based on scroll position
     if (!isTop) {
       navbar.addClass("shadow");
-    } else {
+    } else if (!$("#navbarNav").hasClass("show")) {
       navbar.removeClass("shadow");
     }
+    // else {
+    //   navbar.removeClass("shadow");
+    // }
   }
+});
+
+// ADD SHADOW TO NAV ON BURGER BUTTON
+
+$(document).ready(function () {
+  $(".navbar-toggler").click(function () {
+    let hasClass = $(".navbar").hasClass("shadow");
+    let isTop = $(".navbar").offset().top === 0;
+
+    if (hasClass & isTop) {
+      $(".navbar").removeClass("shadow");
+    } else if (!hasClass) {
+      $(".navbar").addClass("shadow");
+    }
+  });
 });
 
 // GALLARY SET LIKE
@@ -52,7 +88,6 @@ $(document).ready(function () {
 // REGISTRATION FORM VALIDATION
 
 $(document).ready(function () {
-
   const placeholderValues = savePlaceholderValues();
 
   // Form submit
@@ -84,7 +119,8 @@ $(document).ready(function () {
   function savePlaceholderValues() {
     let placeholderValues = [];
 
-    $("#subscribe_form input[type=text], #subscribe_form input[type=email]"
+    $(
+      "#subscribe_form input[type=text], #subscribe_form input[type=email]"
     ).each(function () {
       placeholderValues.push($(this).attr("placeholder"));
     });
@@ -117,10 +153,7 @@ $(document).ready(function () {
     }
 
     if (!isValidEmail(emailValue)) {
-      setValidationError(
-        emailField,
-        "Enter a valid email address."
-      );
+      setValidationError(emailField, "Enter a valid email address.");
       toastr.error("Enter a valid email address!");
       return false;
     }

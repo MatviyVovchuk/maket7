@@ -30,14 +30,18 @@
   <body>
     <div class="container-fluid">
       <header class="container-fluid d-flex justify-content-center">
-  <nav class="navbar w-100 fixed-top d-flex justify-content-center navbar-expand-lg">
+  <nav class="navbar navbar-dark w-100 fixed-top d-flex justify-content-center navbar-expand-lg">
     <div class="container mx-2 mx-sm-0 d-flex justify-content-around justify-content-lg-between">
       <div class="navbar-brand col-xl-4 fs-1">
         <a class="" href="#hello">
-          <img src="images/logo.png" alt="logo" />
+          <img src="images/logo.png" alt="logo"/>
         </a>
       </div>
-      <div class="collapse navbar-collapse col-xl-8 d-lg-flex justify-content-between">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="navbarNav" class="collapse navbar-collapse col-xl-8 d-lg-flex justify-content-between">
         <ul class="navbar-nav me-auto mb-2 w-100 h-100 mb-lg-0 d-lg-flex justify-content-lg-around">
           <li class="nav-item">
             <a class="nav-link active pt-4" aria-current="page" href="#hello">
@@ -45,7 +49,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link active pt-4" aria-current="page" href="#about">
-              Owerview</a>
+              Overview</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active pt-4" aria-current="page" href="#share">
@@ -75,7 +79,7 @@
 
 
       <main>
-        <div id="hello" class="container-fluid main-banner">
+        <div id="hello" class="main-banner container-fluid">
   <div class="slider-banner-content container-fluid">
 
     <div class="slider-banner-item container-fluid d-flex flex-direction-column align-items-center justify-content-center">
