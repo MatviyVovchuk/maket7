@@ -882,6 +882,7 @@ header .navbar.shadow {
   background-color: #de5d5d;
   border-color: #de5d5d;
   transition: all 0.3s ease;
+  font-weight: bold;
 }
 .container-fluid .footer-container .container .footer-block .footer-block-content-form .footer-block-form .form-group-block button:hover {
   font-weight: bold;
