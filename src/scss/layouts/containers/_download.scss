@@ -45,6 +45,22 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .download-container {
+    .download-block {
+      .download-block-content {
+        .download-citate-block {
+          .download-buttons {
+            button {
+              width: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 991px) {
   .download-container {
     .download-block {

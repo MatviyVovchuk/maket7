@@ -749,6 +749,11 @@ header .navbar.shadow {
 .container-fluid main .download-container .download-block .download-block-content .download-citate-block .download-buttons button:hover a {
   color: black;
 }
+@media screen and (max-width: 1200px) {
+  .container-fluid main .download-container .download-block .download-block-content .download-citate-block .download-buttons button {
+    width: 150px;
+  }
+}
 @media screen and (max-width: 991px) {
   .container-fluid main .download-container .download-block .download-block-content .download-citate-block .download-buttons button {
     width: 150px;
