@@ -67,12 +67,12 @@ $(document).ready(function () {
     }
 
     if (!isFormValid) {
-      toastr.error("Форма не надіслена! Не коректні дані!");
+      toastr.error("The form has not been submitted! Incorrect data!");
       event.preventDefault();
       return;
     }
 
-    toastr.success("Форма успішно надіслена!");
+    toastr.success("The form has been successfully submitted!");
     clearForm();
 
     // Uncomment the line below to submit the form or remove event.preventDefault();
@@ -111,17 +111,17 @@ $(document).ready(function () {
     const emailValue = emailField.val().trim();
 
     if (emailField === "") {
-      setValidationError(phoneField, "Введіть адресу електронної пошти.");
-      toastr.error("Введіть адресу електронної пошти!");
+      setValidationError(phoneField, "Enter your email address.");
+      toastr.error("Enter your email address!");
       return false;
     }
 
     if (!isValidEmail(emailValue)) {
       setValidationError(
         emailField,
-        "Введіть правильну адресу електронної пошти."
+        "Enter a valid email address."
       );
-      toastr.error("Введіть правильну адресу електронної пошти!");
+      toastr.error("Enter a valid email address!");
       return false;
     }
 
