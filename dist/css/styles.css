@@ -91,9 +91,9 @@ header .navbar.shadow {
   background-image: url("../images/iPhone.png");
   background-image: no-repeat;
   background-size: cover;
-  background-position: 60% 0%;
+  background-position: 55% 0%;
   color: #ffffff;
-  max-height: 700px;
+  max-height: 600px;
 }
 .container-fluid main .main-banner .slider-banner-content .slider-banner-item .banner-button-block button {
   border: 2px solid #ffffff;
@@ -158,6 +158,11 @@ header .navbar.shadow {
 @media screen and (max-width: 500px) {
   .container-fluid main .main-banner .slider-banner-content .slider-banner-item h1 {
     font-size: 2em;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container-fluid main .main-banner .slider-banner-content .slider-banner-item .banner-button-block button {
+    width: 32%;
   }
 }
 .container-fluid main #about .about-title {

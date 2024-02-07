@@ -12,12 +12,12 @@
       height: 80vh;
       margin-top: 90px;
       background-color: $red-container-color;
-      background-image: url('../images/iPhone.png');
+      background-image: url("../images/iPhone.png");
       background-image: no-repeat;
       background-size: cover;
-      background-position: 60% 0%;
+      background-position: 55% 0%;
       color: $white-text-color;
-      max-height: 700px;
+      max-height: 600px;
 
       .banner-button-block {
         button {
@@ -115,6 +115,19 @@
       .slider-banner-item {
         h1 {
           font-size: 2em;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .main-banner {
+    .slider-banner-content {
+      .slider-banner-item {
+        .banner-button-block {
+          button {
+            width: 32%;
+          }
         }
       }
     }
