@@ -194,14 +194,17 @@ header .navbar.shadow {
     width: 32%;
   }
 }
-.container-fluid main #about .about-title {
+.container-fluid main #about .container {
+  max-width: 1170px;
+}
+.container-fluid main #about .container .about-title {
   white-space: nowrap;
   color: #3a3a3a;
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 600;
 }
-.container-fluid main #about .about-category-item .about-category-text {
+.container-fluid main #about .container .about-category-item .about-category-text {
   text-align: center;
   color: #666666;
   font-size: 14px;
@@ -209,7 +212,7 @@ header .navbar.shadow {
   line-height: 24px;
   font-family: "Montserrat", sans-serif;
 }
-.container-fluid main #about .about-category-item .about-category-text .about-category-title {
+.container-fluid main #about .container .about-category-item .about-category-text .about-category-title {
   text-align: center;
   color: #666666;
   font-size: 16px;
@@ -239,7 +242,7 @@ header .navbar.shadow {
   color: #ffffff;
 }
 .container-fluid main .share-container .container {
-  max-width: 1272px;
+  max-width: 1170px;
 }
 .container-fluid main .share-container .container .share-img-block .share-img {
   width: 100%;
@@ -393,7 +396,7 @@ header .navbar.shadow {
   margin-top: -1px;
 }
 .container-fluid main .features-container .features-block {
-  max-width: 1272px;
+  max-width: 1170px;
 }
 .container-fluid main .features-container .features-block .features-img {
   width: 50%;
@@ -530,7 +533,7 @@ header .navbar.shadow {
   }
 }
 .container-fluid main .gallery-container .gallery-block {
-  max-width: 1272px;
+  max-width: 1170px;
 }
 .container-fluid main .gallery-container .gallery-block .gallery-block-text h1 {
   color: #de5d5d;
@@ -697,7 +700,7 @@ header .navbar.shadow {
   background-color: #de5d5d;
 }
 .container-fluid main .download-container .download-block {
-  max-width: 1272px;
+  max-width: 1170px;
 }
 .container-fluid main .download-container .download-block .download-block-content .app-image img {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
@@ -771,7 +774,7 @@ header .navbar.shadow {
   background-color: #e7e7e7;
 }
 .container-fluid main .compatibility-container .compatibility-block {
-  max-width: 1272px;
+  max-width: 1170px;
 }
 .container-fluid main .compatibility-container .compatibility-block .compatibility-content {
   color: #666666;
@@ -829,7 +832,7 @@ header .navbar.shadow {
   background-color: #f4f4f4;
 }
 .container-fluid .footer-container .container {
-  max-width: 1272px;
+  max-width: 1170px;
 }
 .container-fluid .footer-container .container .footer-block {
   color: #666666;
