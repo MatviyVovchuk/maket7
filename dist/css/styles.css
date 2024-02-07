@@ -90,8 +90,8 @@ header .navbar.shadow {
   background-color: #de5d5d;
   background-image: url("../images/iPhone.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 55% 0%;
+  background-size: 1300px;
+  background-position: 50% 50%;
   color: #ffffff;
   max-height: 600px;
 }
@@ -148,6 +148,26 @@ header .navbar.shadow {
 @media screen and (max-width: 800px) {
   .container-fluid main .main-banner .slider-banner-content .slider-banner-item {
     height: 500px;
+    background-size: 140%;
+    background-position: 50% 100%;
+  }
+  .container-fluid main .main-banner .slider-banner-content .slider-banner-item h1 {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container-fluid main .main-banner .slider-banner-content .slider-banner-item {
+    height: 450px;
+    background-size: 135%;
+  }
+  .container-fluid main .main-banner .slider-banner-content .slider-banner-item h1 {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container-fluid main .main-banner .slider-banner-content .slider-banner-item {
+    height: 400px;
+    background-size: 130%;
   }
   .container-fluid main .main-banner .slider-banner-content .slider-banner-item h1 {
     font-size: 4em;
@@ -157,7 +177,6 @@ header .navbar.shadow {
   .container-fluid main .main-banner .slider-banner-content .slider-banner-item {
     height: 400px;
     background-size: 140%;
-    background-position: 50% 100%;
   }
   .container-fluid main .main-banner .slider-banner-content .slider-banner-item h1 {
     font-size: 3em;

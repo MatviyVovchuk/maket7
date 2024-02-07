@@ -14,8 +14,8 @@
       background-color: $red-container-color;
       background-image: url("../images/iPhone.png");
       background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 55% 0%;
+      background-size: 1300px;
+      background-position: 50% 50%;
       color: $white-text-color;
       max-height: 600px;
 
@@ -90,6 +90,39 @@
     .slider-banner-content {
       .slider-banner-item {
         height: 500px;
+        background-size: 140%;
+        background-position: 50% 100%;
+        
+        h1 {
+          font-size: 4em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .main-banner {
+    .slider-banner-content {
+      .slider-banner-item {
+        height: 450px;
+        background-size: 135%;
+        
+        h1 {
+          font-size: 4em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-banner {
+    .slider-banner-content {
+      .slider-banner-item {
+        height: 400px;
+        background-size: 130%;
+        
         h1 {
           font-size: 4em;
         }
@@ -104,7 +137,6 @@
       .slider-banner-item {
         height: 400px;
         background-size: 140%;
-        background-position: 50% 100%;
         
         h1 {
           font-size: 3em;
