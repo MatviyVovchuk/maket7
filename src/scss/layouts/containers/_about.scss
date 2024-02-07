@@ -1,7 +1,7 @@
 #about {
   .container {
     max-width: 1170px;
-    
+
     .about-title {
       white-space: nowrap;
       color: $gray-h-color;
@@ -45,12 +45,14 @@
 @media screen and (max-width: 800px) {
   #about {
     .container {
-      h1 {
-        font-size: 2.5em;
-      }
-      .about-category-item {
-        img {
-          width: 150px;
+      .row {
+        h1 {
+          font-size: 2.5em;
+        }
+        .about-category-item {
+          img {
+            width: 150px;
+          }
         }
       }
     }
@@ -60,8 +62,10 @@
 @media screen and (max-width: 650px) {
   #about {
     .container {
-      h1 {
-        font-size: 2em;
+      .row {
+        h1 {
+          font-size: 2em;
+        }
       }
     }
   }

@@ -225,15 +225,15 @@ header .navbar.shadow {
   }
 }
 @media screen and (max-width: 800px) {
-  .container-fluid main #about .container h1 {
+  .container-fluid main #about .container .row h1 {
     font-size: 2.5em;
   }
-  .container-fluid main #about .container .about-category-item img {
+  .container-fluid main #about .container .row .about-category-item img {
     width: 150px;
   }
 }
 @media screen and (max-width: 650px) {
-  .container-fluid main #about .container h1 {
+  .container-fluid main #about .container .row h1 {
     font-size: 2em;
   }
 }
