@@ -8,6 +8,14 @@ $(".slider-banner-content, .share-slider, .features-slider").slick({
   slidesToScroll: 1,
 });
 
+// COLLAPSE NAV WHEN CLICK ON MENU ELEMENT
+
+$(document).ready(function() {
+  $('.close-nav').click(function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+});
+
 // DYNAMICALLY UPDATE PROPERTY scroll-padding-top FOR TAKE INTO ACCOUNT HEADER HEIGHT
 
 $(document).ready(function() {
@@ -47,9 +55,6 @@ $(document).ready(function () {
     } else if (!$("#navbarNav").hasClass("show")) {
       navbar.removeClass("shadow");
     }
-    // else {
-    //   navbar.removeClass("shadow");
-    // }
   }
 });
 
